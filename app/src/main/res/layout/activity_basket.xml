@@ -6,25 +6,23 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
     <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#ff00ff"
         android:textStyle="bold" android:textSize="50sp" android:gravity="center"
         android:text="@string/dummy_content" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
-    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    <FrameLayout android:layout_width="317dp" android:layout_height="395dp"
         android:fitsSystemWindows="true"
-        android:id="@+id/">
+        android:id="@+id/basket_"
+        android:layout_gravity="center">
 
         <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black_overlay" android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:text="@string/dummy_button" />
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
 
         </LinearLayout>
     </FrameLayout>
