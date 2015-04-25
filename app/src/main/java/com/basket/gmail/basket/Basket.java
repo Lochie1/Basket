@@ -104,7 +104,7 @@ public class Basket extends Activity {
                 if (TOGGLE_ON_CLICK) {
                     mSystemUiHider.toggle();
                 } else {
-                    mSystemUiHider.show();
+                    mSystemUiHider.hide();
                 }
             }
         });
